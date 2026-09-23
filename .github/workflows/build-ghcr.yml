@@ -1,6 +1,9 @@
 name: Build and Push to GHCR
 
 on:
+  push:
+    branches:
+      - v1.4.0-patch
   workflow_dispatch:
     inputs:
       tag:
